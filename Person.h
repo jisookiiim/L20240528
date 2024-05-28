@@ -1,12 +1,19 @@
 #pragma once
+#include <vector>
+
+using namespace std; 
+
 class FPerson
 {
 public:
 	FPerson();
 	virtual ~FPerson();
 
-	void GetCard();
-	void Open();
+	vector<FCard*> Cards;
+
+	void Draw(FCard* NewCard);
+	int Check();
+	void Show();
 
 };
 

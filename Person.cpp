@@ -8,10 +8,4 @@ FPerson::~FPerson()
 {
 }
 
-void FPerson::GetCard()
-{
-}
 
-void FPerson::Open()
-{
-}

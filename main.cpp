@@ -7,30 +7,49 @@
 
 using namespace std;
 
+enum class EType
+{
+	None = -1,
+	Clova = 0,
+	Spade,
+	Heart,
+	Diamond,
+	Max
+};
+
 int main()
 {
-
-	FPlayer Player;
-	FDealer Dealer;
 	FDeck Deck;
 
-	srand(time(nullptr));
-	int PlayerFirstCard = (rand() % 13) + 1;
-	int PlayerSecondCard = (rand() % 13) + 1;
+	vector<FPerson*> Persons;
+	Persons.push_back(new FDealer);
+	Persons.push_back(new FPlayer);
+	Persons.push_back(new FPlayer);
+	Persons.push_back(new FPlayer);
+	Persons.push_back(new FPlayer);
+	Persons.push_back(new FPlayer);
 
-	//DrawCard (rand() % 13) + 1
-
-	while(true);
+	for (int i = 0; i < person.size(); i++)
 	{
-		Deck.Shuffle();
-		Deck.Pick();
-		Deck.Pick();
 
-		Dealer.Open();
+		Persons[i]->Draw(Deck.Draw());
+		Persons[i]->Draw(Deck.Draw());
 
 	}
 
+	for (int i = 0; i < person.size(); i++)
+	{
+
+		cout << :"Player" << score : " << Persons[i]->Check() << endl;
+
+	}
+
+	Fplayer Player;
+	FDealer Dealer;
 	
+
+	Player.Draw(Deck.Draw());
+	Player.Draw(Deck.)
 
 	return 0;
 
